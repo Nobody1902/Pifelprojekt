@@ -1,24 +1,44 @@
+<nav class="container-fluid">
+  <ul>
+    <li style="padding-left: var(--pico-spacing);">
+      <a href="/">
+        <strong>{{t("SITE_NAME")}}</strong>
+      </a>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <a href="#">{{t("ABOUT")}}</a>
+    </li>
+    <li>
+      <select name="select" required>
+        <option disabled value="">{{t("LANGUAGE")}}</option>
+        <option id="lang-en">English</option>
+        <option id="lang-sl">Slovenščina</option>
+        <option id="lang-de">Deutsch</option>
+      </select>
+    </li>
+    <li style="padding-right: var(--pico-spacing);">
+      <a role="button" href="{{url_for('login')}}">{{t("LOGIN")}}</a>
+    </li>
+  </ul>
+  <script defer>
+    // Language selection
+    const lang_en = document.getElementById("lang-en");
+    const lang_sl = document.getElementById("lang-sl");
+    const lang_de = document.getElementById("lang-de");
 
-<nav class="container">
-        <ul>
-            <li>
-                <a href="/">
-                    <strong>{{t("SITE_NAME")}}</strong>
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li><a href="#">{{t("ABOUT")}}</a></li>
-            <li><a href="#">{{t("SERVICES")}}</a></li>
-            <li><a href="#">{{t("PRODUCTS")}}</a></li>
-            <li>
-                <select name="select" required>
-                    <option selected disabled value="">{{t("LANGUAGE")}}</option>
-                    <option onclick="">English</option>
-                    <option>Slovenščina</option>
-                    <option>Deutsch</option>
-                </select>
-            </li>
-        </ul>
-    </nav>
-    <hr>
+    document.getElementById("lang-{{LANG}}").selected = true;
+
+    lang_en.addEventListener("click", () => {
+      window.open("{{url_for('changelang', newlang='en')}}", "_self");
+    });
+    lang_sl.addEventListener("click", () => {
+      window.open("{{url_for('changelang', newlang='sl')}}", "_self");
+    });
+    lang_de.addEventListener("click", () => {
+      window.open("{{url_for('changelang', newlang='de')}}", "_self");
+    });
+  </script>
+</nav>
+<hr>

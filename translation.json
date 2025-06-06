@@ -1,13 +1,24 @@
 {
-    "sl": {
-        "SITE_NAME": "Pifelmobil",
-        "INDEX_P": "Ultimativna aplikacija za učenje vsega!", 
-        "LOGIN": "Vpis", 
-        "ABOUT": "O nas", 
-        "SERVICES": "Storitve", 
-        "PRODUCTS": "Produkti", 
-        "LANGUAGE": "Jezik",
-        "USERNAME": "Uporabniško ime",
-        "PASSWORD": "Geslo"
-    }
+  "sl": {
+    "SITE_NAME": "Pifelmobil",
+    "INDEX_P": "Ultimativna aplikacija za učenje vsega!",
+    "LOGIN": "Vpis",
+    "ABOUT": "O nas",
+    "SERVICES": "Storitve",
+    "PRODUCTS": "Produkti",
+    "LANGUAGE": "Jezik",
+    "USERNAME": "Uporabniško ime",
+    "PASSWORD": "Geslo"
+  },
+  "en": {
+    "SITE_NAME": "Pifelmobil",
+    "INDEX_P": "The ultimate app to learn it all!",
+    "LOGIN": "Login",
+    "ABOUT": "About",
+    "SERVICES": "Services",
+    "PRODUCTS": "Products",
+    "LANGUAGE": "Language",
+    "USERNAME": "Username",
+    "PASSWORD": "Password"
+  }
 }
