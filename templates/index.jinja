@@ -1,0 +1,17 @@
+{% extends "base.jinja" %}
+
+{% block TITLE %}
+Index
+{% endblock %}
+
+{% block BODY %}
+<main>
+    {% include "navbar.jinja" %}
+    <center>
+        <hgroup>
+            <h1 style="font-size: 3rem;">{{t("SITE_NAME")}}</h1>
+            <p>{{t("INDEX_P")}}</p>
+        </hgroup>
+    </center>
+</main>
+{% endblock %}

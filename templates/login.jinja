@@ -1,0 +1,23 @@
+{% extends "base.jinja" %}
+
+{% block TITLE %}
+{{t("LOGIN")}}
+{% endblock %}
+
+{% block BODY %}
+<main>
+    {% include "navbar.jinja" %}
+    <form action="." method="post">
+        <div style="display: flex; flex-direction:column; text-align: center; max-width: 50%;" class="container">
+            <h1>{{t('LOGIN')}}</h1>
+            <fieldset>
+                <input required type="text" placeholder="{{t('USERNAME')}}" name="username">
+                <input required type="password" placeholder="{{t('PASSWORD')}}" name="password">
+            </fieldset>
+    	    <input type="submit" value="{{t('LOGIN')}}"/>
+        </div>
+    </form>
+</main>
+
+
+{% endblock %}

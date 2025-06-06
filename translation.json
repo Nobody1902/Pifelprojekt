@@ -1,0 +1,13 @@
+{
+    "sl": {
+        "SITE_NAME": "Pifelmobil",
+        "INDEX_P": "Ultimativna aplikacija za učenje vsega!", 
+        "LOGIN": "Vpis", 
+        "ABOUT": "O nas", 
+        "SERVICES": "Storitve", 
+        "PRODUCTS": "Produkti", 
+        "LANGUAGE": "Jezik",
+        "USERNAME": "Uporabniško ime",
+        "PASSWORD": "Geslo"
+    }
+}
